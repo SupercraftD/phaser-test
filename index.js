@@ -29,7 +29,10 @@ function create ()
 
 function update()
 {
-    if (this.input.activePointer.isDown){
-        ball.x += 50;
+    if (this.input.keyboard.addKey('D').isDown){
+        ball.x += 10;
+    }
+    if (this.input.keyboard.addKey('A').isDown){
+        ball.x -= 10;
     }
 }
