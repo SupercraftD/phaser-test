@@ -30,6 +30,6 @@ function create ()
 function update()
 {
     if (this.input.activePointer.isDown){
-        this.ball.x += 50;
+        ball.x += 50;
     }
 }
