@@ -30,7 +30,6 @@ function create ()
 function update()
 {
     if (this.input.activePointer.isDown){
-        alert("clicked")
-        this.ball.x += 10;
+        this.ball.x += 50;
     }
 }
