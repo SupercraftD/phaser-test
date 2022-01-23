@@ -23,12 +23,13 @@ function preload ()
 
 function create ()
 {
-
-    this.add.sprite(50,50,'ball');
+    ball = this.add.sprite(50,50,'ball');
 
 }
 
 function update()
 {
-    
+    if (this.input.activePointer.isDown){
+        this.ball.x += 10;
+    }
 }
