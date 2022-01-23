@@ -33,7 +33,7 @@ function create ()
 
     game.add.sprite(50,50,'sky');
     game.physics.enable(ball, Phaser.Physics.ARCADE);
-    ball.body.velocity.set(150, 150);
+    //ball.body.velocity.set(150, 150);
 
 
 }
