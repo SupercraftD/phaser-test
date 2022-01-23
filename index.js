@@ -29,22 +29,17 @@ function create ()
 
 function update()
 {
-    if (this.input.keyboard.addKey('D').isDown){
+    if (this.input.keyboard.addKey('D').isDown && ball.x + 10 <= 480){
         ball.x += 10;
     }
-    if (this.input.keyboard.addKey('A').isDown){
+    if (this.input.keyboard.addKey('A').isDown && ball.x - 10 >= 0){
         ball.x -= 10;
     }
-    if (this.input.keyboard.addKey('S').isDown){
+    if (this.input.keyboard.addKey('S').isDown && ball.y + 10 <= 320){
         ball.y += 10;
     }
-    if (this.input.keyboard.addKey('W').isDown){
+    if (this.input.keyboard.addKey('W').isDown && ball.y - 10 >= 0){
         ball.y -= 10;
-    }
-
-    if (this.input.activePointer.leftButton.isDown){
-        ball.x = game.input.mousePointer.x;
-        ball.y = game.input.mousePointer.y;
     }
 
 }
