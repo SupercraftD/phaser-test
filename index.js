@@ -16,21 +16,17 @@ var ball;
 
 function preload ()
 {
-    game.stage.backgroundColor = "#eee";
+    this.stage.backgroundColor = "#eee";
 
-    game.load.setBaseURL('https://supercraftd.github.io/phaser-test/');
+    this.load.setBaseURL('https://supercraftd.github.io/phaser-test/');
 
-    game.load.image('ball','assets/ball.png');
+    this.load.image('ball','assets/ball.png');
 }
 
 function create ()
 {
-    game.physics.startSystem(Phaser.Physics.ARCADE);
 
-    game.add.sprite(50,50,'ball');
-    game.physics.enable(ball, Phaser.Physics.ARCADE);
-    //ball.body.velocity.set(150, 150);
-
+    this.add.sprite(50,50,'ball');
 
 }
 
