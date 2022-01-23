@@ -35,4 +35,16 @@ function update()
     if (this.input.keyboard.addKey('A').isDown){
         ball.x -= 10;
     }
+    if (this.input.keyboard.addKey('S').isDown){
+        ball.y += 10;
+    }
+    if (this.input.keyboard.addKey('W').isDown){
+        ball.y -= 10;
+    }
+
+    if (this.input.activePointer.leftButton.isDown){
+        ball.x = game.input.mousePointer.x;
+        ball.y = game.input.mousePointer.y;
+    }
+
 }
