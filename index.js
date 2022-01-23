@@ -16,8 +16,6 @@ var ball;
 
 function preload ()
 {
-    this.stage.backgroundColor = "#eee";
-
     this.load.setBaseURL('https://supercraftd.github.io/phaser-test/');
 
     this.load.image('ball','assets/ball.png');
